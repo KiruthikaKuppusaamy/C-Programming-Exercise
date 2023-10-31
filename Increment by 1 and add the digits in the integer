@@ -1,0 +1,18 @@
+// C Program to Increment by 1 to all the Digits of a Given Integer
+
+#include <stdio.h>
+
+void main()
+{
+    int number,sum=0;
+    
+    printf("Enter the number");
+    scanf("%d",&number);
+    
+    while(number!=0)
+    {
+      sum = sum + number%10 + 1;
+      number = number/10;
+    }
+    printf("Sum of the given no is %d",sum);
+}
