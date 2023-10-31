@@ -1,0 +1,17 @@
+// Write a program to convert the given seconds into hours – minutes – seconds?
+
+#include <stdio.h>
+void main()
+{
+    int seconds,minutes,hours;
+    
+    printf("Enter seconds ");
+    scanf("%d",&seconds);
+    
+    minutes = seconds / 60;
+    hours = seconds / 3600;
+    
+    printf("Seconds \t   %d",seconds);
+    printf("\nSeconds to Minutes %d",minutes);
+    printf("\nSeconds to Hours   %d",hours);
+}
