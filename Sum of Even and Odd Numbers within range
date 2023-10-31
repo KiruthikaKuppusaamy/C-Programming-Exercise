@@ -1,0 +1,27 @@
+// C Program to Find the Sum of Even and Odd Numbers
+
+#include <stdio.h>
+
+int main()
+{
+    int range,odd=0,even=0;
+    
+    printf("Enter the number range");
+    scanf("%d",&range);
+    
+    for(int i=0;i<=range;i++)
+    {
+        if(i%2==0)
+        {
+            even = even + i;
+        }
+        else
+        {
+            odd = odd + i;
+        }
+        
+    }
+    printf("Sum of odd no is %d and even no is %d",odd,even);
+
+    return 0;
+}
