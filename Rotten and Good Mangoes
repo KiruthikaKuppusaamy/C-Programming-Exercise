@@ -1,0 +1,30 @@
+/*
+There are a number of  mangoes in a basket. Given x is the number of rotten mangoes. 
+Write a program to display the number of good mangoes in the basket. 
+(n and x are user inputs)
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int n,r;
+    
+    printf("Nter number of mangoes and rotten mangoes ");
+    scanf("%d %d",&n,&r);
+    
+    printf("Number of good mangoes %d",n-r);   
+
+    return 0;
+}
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Input
+
+Nter number of mangoes and rotten mangoes 10 6
+
+Output
+
+Number of good mangoes 4
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
