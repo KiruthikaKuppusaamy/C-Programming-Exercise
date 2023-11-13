@@ -1,0 +1,78 @@
+// C Program to read a character and display whether it is in uppercase or lowercase
+
+/* validating directly */
+#include <stdio.h>
+
+int main() 
+{
+    char c;
+    
+    printf("Nter the character :");
+    scanf("%c",&c);
+    
+    if(c>='a' && c<='z')
+    {
+        printf("%c is in lowercase",c);
+    }
+    else if(c>='A' && c<='Z')
+    {
+        printf("%c is in UPPERCASE",c);
+    }
+    else
+    {
+        printf("%c is in neither lower nor UPPERCASE",c);
+    }
+    
+    return 0;
+}
+
+
+
+
+/*  Using ASCII Value */
+
+#include <stdio.h>
+
+int main() 
+{
+    char c;
+    int i;
+    printf("Nter the character :");
+    scanf("%c",&c);
+    i = c;
+    
+    if(i>=97 && i<=122)
+    {
+        printf("%c is in lowercase",c);
+    }
+    else if(i>=65 && i<=90)
+    {
+        printf("%c is in UPPERCASE",c);
+    }
+    else
+    {
+        printf("%c is in neither lower nor UPPERCASE",c);
+    }
+    
+    return 0;
+}
+
+
+
+********************************************************************************************
+Input
+Nter the character :g
+Output
+g is in lowercase
+
+Input
+Nter the character :K
+Output
+K is in UPPERCASE
+
+
+Input
+Nter the character :3
+Output
+3 is in neither lower nor UPPERCASE
+********************************************************************************************
