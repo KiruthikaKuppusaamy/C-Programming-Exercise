@@ -1,0 +1,38 @@
+// C program to read college name from the user, if it is KSRCT print it ‘n’ times?
+
+#include <stdio.h>
+
+int main() 
+{
+    char a[5] = "KSRCT";
+    char b[5];
+    scanf("%s",b);
+    if(b[0]=='K'&&b[1]=='S'&&b[2]=='R'&&b[3]=='C'&&b[4]=='T'&&b[5]=='\0')
+    {
+        printf("KSRCT \nKSRCT \nKSRCT");
+    }
+    else
+    {
+      printf("Sorry!! U r not from our College");
+    }
+    return 0;
+}
+
+***********************************************************************************************************
+Input
+KSRCE
+Output
+Sorry!! U r not from our College
+
+Input
+KSRCT
+Output
+KSRCT
+KSRCT
+KSRCT
+
+Input
+KSRIET
+Output
+Sorry!! U r not from our College
+***********************************************************************************************************
