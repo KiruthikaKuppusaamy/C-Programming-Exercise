@@ -1,0 +1,116 @@
+// C Program to read a Letter Grade and Display the Equivalent Description with grade points
+/*
+Letter Grade                 Grade Description
+O (Out Standing)             10
+A+ (Excellent)               9
+A (Very Good)                8
+B+ (Good)                    7
+B (Average)                  6
+C (Satisfactory)             5
+U (Re-Appearance)            0
+SA (Shortage of Attendance )  
+WD (Withdrawal)
+*/
+
+#include <stdio.h>
+
+int main() 
+{
+    char g[2];
+    printf("Nter the Grade :");
+    scanf("%s",g);
+    
+    switch(g[0])
+    {
+        case 'O':
+             printf("Description  : Outstanding \nGrade Points : 10");
+             break;
+        case 'A':
+             if(g[1]=='+')
+             {
+              printf("Description  : Excellent \nGrade Points : 9");
+             }
+             else if(g[1]=='\0')
+             {
+              printf("Description  : Very Good \nGrade Points : 8");
+             }
+             else
+             {
+              printf("No such grade");
+             }
+             break;
+        case 'B':
+             if(g[1]=='+')
+             {
+              printf("Description  : Good \nGrade Points : 7");
+             }
+             else if(g[1]=='\0')
+             {
+              printf("Description  : Average \nGrade Points : 6");
+             }
+             else
+             {
+              printf("No such grade");
+             }
+             break;
+        case 'C':
+             printf("Description  : Satisfactory \nGrade Points : 5");
+             break;
+        case 'U':
+             printf("Description  : Reapperance \nGrade Points : 0");
+             break;
+        case 'S':
+             if(g[1]=='A')
+             {
+              printf("Description  : Shortage of Attendance");
+             }
+             else if(g[1]=='\0')
+             {
+               printf("No such grade");
+             }
+             break;
+        case 'W':
+             if(g[1]=='D')
+             {
+              printf("Description  : Withdrawal");
+             }
+             else if(g[1]=='\0')
+             {
+               printf("No such grade");
+             }
+             break;
+        default:
+            printf("None");
+            break;
+    }
+    
+    return 0;
+}
+
+*************************************************************************************************
+Input
+Output
+
+
+
+Input
+Output
+
+
+
+
+Input
+Output
+
+
+
+
+Input
+Output
+
+
+
+
+Input
+Output
+*************************************************************************************************
