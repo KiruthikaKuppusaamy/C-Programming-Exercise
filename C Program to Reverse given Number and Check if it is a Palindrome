@@ -1,0 +1,48 @@
+// C Program to Reverse given Number and Check if it is a Palindrome
+
+#include <stdio.h>
+
+int main() 
+{
+  int number,reverse=0,quotient,given_no;
+  printf("Nter no: ");
+  scanf("%d",&number);
+  
+  given_no = number;
+  
+  while(number!=0)
+  {
+     quotient = number%10;
+     reverse = reverse*10+quotient;
+     number = number/10;
+  }
+
+  printf("Given Number   :%d\n",given_no);
+  printf("Reverse Number :%d\n",reverse);
+  
+  if(given_no==reverse)
+  {
+      printf("Given number is Palindrome");
+  }
+  else
+  {
+      printf("Given number is not a Palindrome");
+  }
+     return 0;
+}
+
+**********************************************************************************************
+Input
+Nter no: 123
+Output
+Given Number :123
+Reverse Number :321
+Given number is not a Palindrome
+
+Input
+Nter no: 151
+Output
+Given Number   :151
+Reverse Number :151
+Given number is Palindrome
+**********************************************************************************************
