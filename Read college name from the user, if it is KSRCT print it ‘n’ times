@@ -2,14 +2,20 @@
 
 #include <stdio.h>
 
+#include <stdio.h>
+
 int main() 
 {
-    char a[5] = "KSRCT";
-    char b[5];
-    scanf("%s",b);
+    char a[5] = "KSRCT",b[5];
+    int n;
+    printf("Enter College name and no.of times to print :");
+    scanf("%s %d",b,&n);
     if(b[0]=='K'&&b[1]=='S'&&b[2]=='R'&&b[3]=='C'&&b[4]=='T'&&b[5]=='\0')
     {
-        printf("KSRCT \nKSRCT \nKSRCT");
+        for(int i=1;i<=n;i++)
+        {
+          printf("KSRCT\n");
+        }
     }
     else
     {
@@ -20,19 +26,17 @@ int main()
 
 ***********************************************************************************************************
 Input
-KSRCE
+Enter College name and no.of times to print :KSRIET 6
 Output
 Sorry!! U r not from our College
 
 Input
-KSRCT
+Enter College name and no.of times to print :KSRCT 6
 Output
 KSRCT
 KSRCT
 KSRCT
-
-Input
-KSRIET
-Output
-Sorry!! U r not from our College
+KSRCT
+KSRCT
+KSRCT
 ***********************************************************************************************************
