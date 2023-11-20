@@ -1,0 +1,71 @@
+// Check Middle digit of given 3 digit number is Equal to the Sum of Other Two digits or Not
+
+#include <stdio.h>
+
+int main() 
+{
+   int n,fn,mn,ln,s,no;
+   printf("Enter the number : ");
+   scanf("%d",&n);
+   
+  ln = n%10;
+  no = n/10;
+  mn = no%10;
+  fn = no/10;
+
+  printf("Last   digit is %d\nMiddle digit is %d\nFirst  digit is %d\n",ln,mn,fn);
+
+  if(mn==fn+ln)
+  {
+      printf("Middle digit is Equal to the Sum of Other Two digits");
+  }
+  else
+  {
+       printf("Middle digit is Not Equal to the Sum of Other Two digits");
+  }
+ 
+  return 0;
+}
+
+***********************************************************************************************************
+Input
+Enter the number : 123
+Output
+Last   digit is 3
+Middle digit is 2
+First  digit is 1
+Middle digit is Not Equal to the Sum of Other Two digits
+
+Input
+Enter the number : 132
+Output
+Last   digit is 2
+Middle digit is 3
+First  digit is 1
+Middle digit is Equal to the Sum of Other Two digits
+***********************************************************************************************************
+
+// Above can also be modified as follows
+
+#include <stdio.h>
+
+int main() 
+{
+   int n,fn,mn,ln,s;
+   printf("Enter the number : ");
+   scanf("%d",&n);
+   
+  ln = n%10;
+  mn = (n/10)%10;
+  fn = (n/10)/10;
+  printf("Last   digit is %d\nMiddle digit is %d\nFirst  digit is %d\n",ln,mn,fn);
+  if(mn==fn+ln)
+  {
+      printf("Middle digit is Equal to the Sum of Other Two digits");
+  }
+  else
+  {
+       printf("Middle digit is Not Equal to the Sum of Other Two digits");
+  }
+     return 0;
+}
