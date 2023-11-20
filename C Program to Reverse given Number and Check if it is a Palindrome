@@ -1,5 +1,8 @@
 // C Program to Reverse given Number and Check if it is a Palindrome
 
+/*
+123 = 1x10^2 + 2x10^1 + 3X10^0
+*/
 #include <stdio.h>
 
 int main() 
