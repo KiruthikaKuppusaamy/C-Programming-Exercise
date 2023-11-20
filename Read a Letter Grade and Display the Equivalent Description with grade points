@@ -89,28 +89,35 @@ int main()
 
 *************************************************************************************************
 Input
+Nter the Grade :O
 Output
+Description  : Outstanding 
+Grade Points : 10
+
+
+Input
+Nter the Grade :A
+Output
+Description  : Very Good 
+Grade Points : 8
+
+
+Input
+Nter the Grade :A+
+Output
+Description  : Excellent 
+Grade Points : 9
+
+
+Input
+Nter the Grade :SA
+Output
+Description  : Shortage of Attendance
 
 
 
 Input
+Nter the Grade :S
 Output
-
-
-
-
-Input
-Output
-
-
-
-
-Input
-Output
-
-
-
-
-Input
-Output
+No such grade
 *************************************************************************************************
