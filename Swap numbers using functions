@@ -1,0 +1,71 @@
+// Swapping two numbers without functions
+
+#include <stdio.h>
+
+int main() 
+{
+    int a,b;
+    printf("Enter nos :");
+    scanf("%d %d",&a,&b);
+    printf("Before swapping a = %d , b = %d\n",a,b);
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+    printf("After  swapping a = %d , b = %d\n",a,b);
+    return 0;
+}
+
+_______________________________________________________________________________________________
+
+// Without Argument Without Return type
+
+#include <stdio.h>
+
+void swap()
+{
+    int a,b;
+    printf("Enter nos :");
+    scanf("%d %d",&a,&b);
+    printf("Before swapping a = %d , b = %d\n",a,b);
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+    printf("After  swapping a = %d , b = %d\n",a,b);
+}
+
+
+int main() 
+{
+    swap();
+    return 0;
+}
+
+_______________________________________________________________________________________________
+
+// With Argument Without Return type
+#include <stdio.h>
+
+void swap(a,b)
+{
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+    printf("After  swapping a = %d , b = %d\n",a,b);
+}
+
+
+int main() 
+{
+    int a,b;
+    printf("Enter nos :");
+    scanf("%d %d",&a,&b);
+    printf("Before swapping a = %d , b = %d\n",a,b);
+    swap(a,b);
+    return 0;
+}
+
+_______________________________________________________________________________________________
+
