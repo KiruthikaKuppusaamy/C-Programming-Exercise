@@ -1,0 +1,65 @@
+/*
+year exactly divisible by 400 (such as 2000,2400) 
+or
+year exactly divisible by 4 (such as 2008, 2012, 2016) and not a multiple of 100 (such as 1900, 2100, 2200)
+
+
+*/
+
+
+****************************************************************************************
+Method 1 
+****************************************************************************************
+
+#include <stdio.h>
+
+void main()
+{
+    int year;
+    
+    printf("Nter year ");
+    scanf("%d",&year);
+    
+    if(year%400 == 0)
+    {
+        printf("%d is leap year",year);
+    }
+    else if(year%100 == 0)
+    {
+        printf("%d is not leap year",year);
+    } 
+    else if(year%4 ==0)
+    {
+        printf("%d is leap year",year);
+    }
+    else
+    {
+        printf("%d is not leap year",year);
+    }
+}
+
+
+
+****************************************************************************************
+Method 2 
+****************************************************************************************
+
+#include <stdio.h>
+
+void main()
+{
+    int year;
+    
+    printf("Nter year ");
+    scanf("%d",&year);
+    
+    if((year%400 == 0) || ((year%100 != 0) && (year%4 ==0)))
+    {
+        printf("%d is leap year",year);
+    }
+    else
+    {
+        printf("%d is not leap year",year);
+    }
+}
+
