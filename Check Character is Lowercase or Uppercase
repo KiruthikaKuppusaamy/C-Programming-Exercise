@@ -1,0 +1,25 @@
+// Using if else
+
+#include <stdio.h>
+
+void main()
+{
+    char c;
+    printf("Nter");
+    scanf("%c",&c);
+    
+    if(c>='a' && c<='z')
+    {
+        printf("lower case");
+    }
+    
+    if(c>='A' && c<='Z')
+    {
+        printf("upper case");
+    }
+    
+}
+
+// using switch case
+
+
