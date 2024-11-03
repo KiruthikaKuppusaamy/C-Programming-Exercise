@@ -1,0 +1,31 @@
+// 1. C Program to Find the Number of Elements in an Array
+
+#include <stdio.h>
+void main() 
+{
+   int array[] = {5,10,15,20,25,30};
+   printf("Number of elements in given array : %d", sizeof(array)/sizeof(array[0]));  
+  
+   // printf("Number of elements in given array : %d", sizeof(array)/sizeof(int));
+}  
+
+****************************************************************************************
+Output
+
+Number of elements in given array: 6
+****************************************************************************************
+
+// 2. C program to Delete an Element from an Array
+// 3. C Program to Find Sum of Array Elements
+// 4. C Program to Split the Array and Add First Part to the End
+// 5. C Program which read two array elements and perform arhtematic operations ?
+// 6. C Program to Find Largest Element in an Array
+// 7. C Program To Find Maximum Difference Between Two Elements in an Array
+// 8. C Program to Remove Duplicate Elements from an Array
+// 9. C Program to Separate Odd and Even Numbers from an Array
+// 10.C Program to Increment All Elements of an Array by One
+// 11. C Program to Sort N Names in an Alphabetical Order
+// 12. C Program to Merge Two Sorted Array Elements
+// 13. C Program to print Alternate Elements of an Array
+// 14. C Program to print Square of Array Elements
+// 15. C Program to print ASCII values using Array
