@@ -76,3 +76,59 @@ Nter the character :3
 Output
 3 is in neither lower nor UPPERCASE
 ********************************************************************************************
+
+
+/*  Using isupper(), islower(), isdigit() */
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main() 
+{
+    char c;
+    
+    printf("Nter the character :");
+    scanf("%c",&c);
+    
+    if(islower(c))
+    {
+        printf("%c is in lowercase",c);
+    }
+    else if(isupper(c))
+    {
+        printf("%c is in UPPERCASE",c);
+    }
+    else if(isdigit(c))
+    {
+        printf("%c is a digit",c);
+    }
+    else 
+    {
+        printf("%c is not in lower ,UPPER or digit",c);
+    }
+    
+    return 0;
+}
+
+********************************************************************************************
+Input
+Nter the character :g
+Output
+g is in lowercase
+
+Input
+Nter the character :K
+Output
+K is in UPPERCASE
+
+
+Input
+Nter the character :3
+Output
+3 is a digit
+
+Input
+Nter the character :@
+Output
+@ is not in lower ,UPPER or digit
+********************************************************************************************
