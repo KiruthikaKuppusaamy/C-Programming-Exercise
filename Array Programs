@@ -16,7 +16,109 @@ Number of elements in given array: 6
 ****************************************************************************************
 
 // 2. C program to Delete an Element from an Array
+
+#include <stdio.h>  
+
+void main ()  
+{  
+    int arr[50];  
+    int pos, i, num; 
+    
+    printf ("\nEnter the number of elements in an array: ");  
+    scanf (" %d", &num);  
+      
+    printf ("\nEnter %d elements in array: \n", num);  
+    for (i = 0; i < num; i++ )  
+    {   
+        printf (" arr[%d] = ", i);  
+        scanf (" %d", &arr[i]);  
+    }  
+      
+   printf( "Enter the position of the array to delete:  ");  
+    scanf (" %d", &pos);  
+      
+    if (pos >= num+1)  
+    {  
+        printf (" \n Deletion is not possible in the array.");  
+    }  
+    else  
+    {  
+        for (i = pos - 1; i < num -1; i++)  
+        {  
+            arr[i] = arr[i+1]; 
+        }  
+          
+        printf (" \n The resultant array is: \n");  
+          
+        for (i = 0; i< num - 1; i++)  
+        {  
+            printf (" arr[%d] = ", i);  
+            printf (" %d \n", arr[i]);  
+        }  
+    }  
+   
+}  
+
+
+****************************************************************************************
+Output
+
+Enter the number of elements in an array: 5
+
+Enter 5 elements in array: 
+ arr[0] = 2
+ arr[1] = 4
+ arr[2] = 5
+ arr[3] = 6
+ arr[4] = 8
+Enter the position of the array to delete:  3
+ 
+ The resultant array is: 
+ arr[0] =  2 
+ arr[1] =  4 
+ arr[2] =  6 
+ arr[3] =  8 
+****************************************************************************************
+
 // 3. C Program to Find Sum of Array Elements
+
+#include <stdio.h>  
+
+void main ()  
+{  
+    int arr[50], i, num, sum = 0;  
+    
+    
+    printf ("\nEnter the number of elements in an array: ");  
+    scanf (" %d", &num);  
+      
+    printf ("\nEnter %d elements in array: \n", num);  
+    for (i = 0; i < num; i++ )  
+    {   
+        printf (" arr[%d] = ", i);  
+        scanf (" %d", &arr[i]);  
+        sum = sum + arr[i];
+    }  
+      
+    printf (" \n Sum of the elements in the array : %d",sum);  
+ 
+}  
+
+****************************************************************************************
+Output
+
+Enter the number of elements in an array: 4
+
+Enter 4 elements in array: 
+ arr[0] = 1
+ arr[1] = 2
+ arr[2] = 3
+ arr[3] = 4
+ 
+ Sum of the elements in the array : 10
+
+****************************************************************************************
+
 // 4. C Program to Split the Array and Add First Part to the End
 // 5. C Program which read two array elements and perform arhtematic operations ?
 // 6. C Program to Find Largest Element in an Array
