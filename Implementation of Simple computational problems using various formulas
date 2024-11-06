@@ -1,0 +1,29 @@
+/*  Implementation of Simple computational problems using various formulas  */
+
+// Easy
+1.Compound Interest Calculator
+2.BMI (Body Mass Index) Calculator
+3.Simple Interest Calculator
+4.Ohm's Law Calculator
+5.Harmonic Mean Calculation
+
+// Medium
+1.Kalki wrote a book Ponniyin Selvan and released 50, 525 copies. Since the book was popular among the readers, the publishers decided to publish a second edition with 40, 399 copies. Calculate the total number of copies published.
+
+2.Calculate number of tickets the girl sold in the following scenario. The girls had 3 weeks to sell tickets for their play. In the first week, they sold ‘x’ tickets. In the second week they sold ‘y’ tickets and in the third week they sold ‘z’ tickets. 
+
+3.Mr. Leo das spent $X for petrol on Wednesday. He spent $Y more than that on Thursday. Write a program to calculate how much did he spend on petrol on those two days.
+
+4.A bus can hold 108 passengers. If there are ‘x’ rows of seats on the bus, Calculate how many seats are in each row? 
+
+5.Kundavai needs 5 oranges to make a glass of orange juice. If Kundavai has ‘X’ oranges, Calculate how many glasses of orange juice can she make?
+
+// High
+1.Area and Circumference of a Circle
+2.Perimeter and Area of a Rectangle
+3.Temperature Converter (Celsius to Fahrenheit)
+4.Fahrenheit to Kelvin Conversion
+5.Surface Area and Volume of a Sphere
+
+
+
