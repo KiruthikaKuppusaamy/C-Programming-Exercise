@@ -93,8 +93,45 @@ Total number of books published : 90924
 
                                 ***************************************************
 2.Calculate number of tickets the girl sold in the following scenario. The girls had 3 weeks to sell tickets for 
-their play. In the first week, they sold ‘x’ tickets. In the second week they sold ‘y’ tickets and in the third week they 
-sold ‘z’ tickets. 
+their play. In the first week, they sold ‘x’ tickets. In the second week they sold ‘y’ tickets and in the third 
+week they sold ‘z’ tickets. 
+
+Program
+
+#include <stdio.h>
+
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by : Janasri.R - I Year B.E. CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+int x,y,z;
+printf("\nTickets sold in first week - x : ");
+scanf("%d",& x);
+printf("\nTickets sold in second week - y : ");
+scanf("%d",& y);
+printf("\nTickets sold in third week - z : ");
+scanf("%d",& z);
+
+printf("\nTotal number of Tickets sold : %d",x+y+z);
+}
+
+Output
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Janasri.R - I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tickets sold in first week - x : 2
+
+Tickets sold in second week - y : 4
+
+Tickets sold in third week - z : 6
+
+Total number of Tickets sold : 12
+
+
                                 ***************************************************
 3.Mr. Leo das spent Rs.X for petrol on Wednesday. He spent Rs.  Y more than that on Thursday. Write a program to calculate 
 how much did he spend on petrol on those two days.
@@ -195,6 +232,13 @@ Enter the number of oranges : 30
 
 Kundavai can make 6 glasses of orange juice
 
+
+
+
+
+
+
+
 ---------------------------------------------------------------------------------------------------
 High
 ---------------------------------------------------------------------------------------------------
@@ -230,8 +274,49 @@ Enter radius of the Circle : 26
 Area of Circle: 2122.64 
 Circumference of Circle: 163.28
 
+
                                 ***************************************************
+
 2.Perimeter and Area of a Rectangle
+
+Program
+
+#include <stdio.h>
+
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by : Sowmiya J - I Year B.E. CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+float length, width, perimeter, area;
+
+printf("Enter length of the Rectangle : ");
+scanf("%f",&length);
+
+printf("Enter width of the Rectangle : ");
+scanf("%f",&width);
+
+perimeter= 2*(length+width);
+printf("\nPerimeter of the Rectangle : %.0f", perimeter);
+
+area=length*width;
+printf("\nArea of the Rectangle : %.0f", area) ;
+}
+
+
+Output
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Sowmiya J - I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter length of the Rectangle : 9
+Enter width of the Rectangle : 3
+
+Perimeter of the Rectangle : 24
+Area of the Rectangle : 27
+
+
                                 ***************************************************
 3.Temperature Converter (Celsius to Fahrenheit)
                                 ***************************************************
