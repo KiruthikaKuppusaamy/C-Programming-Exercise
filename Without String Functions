@@ -1,0 +1,112 @@
+// Length of the String : Prg 1
+
+#include <stdio.h>
+
+void main() 
+{
+    char str[] = "KKiruthika";
+    printf(" Length of String : %d ",(sizeof(str)/sizeof(str[0]))-1);
+    
+}
+
+***********************************************************************************
+Output
+
+Length of String : 10 
+***********************************************************************************
+
+// Length of the String : Prg 2
+
+#include <stdio.h>
+
+void main() 
+{
+    char str[] = "KKiruthika";
+    int count = 0;
+    
+    while ((str[count])!= '\0')
+    {
+        count++;
+    }
+    
+    printf(" Length of String : %d ",count);
+    
+}
+
+***********************************************************************************
+Output
+
+Length of String : 10 
+***********************************************************************************
+
+// Length of the String : Prg 3
+
+#include <stdio.h>
+
+void main() 
+{
+    char str[] = "KKiruthika";
+    int count = 0;
+    
+    for(int i=0;str[i]!='\0';i++)
+    {
+    count++;    
+    }
+    
+    printf(" Length of String : %d ",count);
+    
+}
+
+***********************************************************************************
+Output
+
+Length of String : 10 
+***********************************************************************************
+
+// copies the contents of source string to destination string - strcpy() : Prg 1
+ 
+#include <stdio.h>
+
+void main() 
+{
+    char str1[50] = "KKiruthika",str2[50];
+    int count = 0;
+    
+    while ((str1[count])!= '\0')
+    {
+        str2[count] = str1[count];
+        count++;
+    }
+    
+    printf("String in str2 : %s ",str2);
+    
+}
+
+***********************************************************************************
+Output
+
+String in str2 : KKiruthika 
+***********************************************************************************
+
+// copies the contents of source string to destination string - strcpy() : Prg 2
+
+#include <stdio.h>
+
+void main() 
+{
+    char str1[50] = "KKiruthika",str2[50];
+    
+    for(int i=0;str1[i]!='\0';i++)
+    {
+        str2[i] = str1[i];
+     }
+    
+    printf("String in str2 : %s ",str2);
+    
+}
+
+***********************************************************************************
+Output
+
+String in str2 : KKiruthika 
+***********************************************************************************
