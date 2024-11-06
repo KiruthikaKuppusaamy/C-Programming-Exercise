@@ -1,29 +1,243 @@
 /*  Implementation of Simple computational problems using various formulas  */
 
-// Easy
+---------------------------------------------------------------------------------------------------
+Easy
+---------------------------------------------------------------------------------------------------
 1.Compound Interest Calculator
+                                ***************************************************
 2.BMI (Body Mass Index) Calculator
+
+Program
+
+Output
+
+
+                                ***************************************************
 3.Simple Interest Calculator
+                                ***************************************************
 4.Ohm's Law Calculator
+
+Program
+
+#include <stdio.h>
+
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by : Mithuna P - I Year B.E. CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+float voltage,current,resistance; 
+
+printf("Enter the Current : ");
+scanf("%f",&current);
+printf("\nEnter the Resistance : "); 
+scanf("%f",&resistance);
+
+voltage= current*resistance; 
+
+printf("\nVoltage is : %.0f V",voltage);
+}
+
+
+Output
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Mithuna P - I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter the Current : 3.2
+
+Enter the Resistance : 50
+
+Voltage is : 160 V
+
+
+                                ***************************************************
 5.Harmonic Mean Calculation
 
-// Medium
-1.Kalki wrote a book Ponniyin Selvan and released 50, 525 copies. Since the book was popular among the readers, the publishers decided to publish a second edition with 40, 399 copies. Calculate the total number of copies published.
+---------------------------------------------------------------------------------------------------
+Medium
+---------------------------------------------------------------------------------------------------
 
-2.Calculate number of tickets the girl sold in the following scenario. The girls had 3 weeks to sell tickets for their play. In the first week, they sold ‘x’ tickets. In the second week they sold ‘y’ tickets and in the third week they sold ‘z’ tickets. 
+1.Kalki wrote a book Ponniyin Selvan and released 50, 525 copies. Since the book was popular among the readers, 
+the publishers decided to publish a second edition with 40, 399 copies. Calculate the total number of copies published.
 
-3.Mr. Leo das spent $X for petrol on Wednesday. He spent $Y more than that on Thursday. Write a program to calculate how much did he spend on petrol on those two days.
+Program
+
+#include <stdio.h>
+
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by : S.Pooja - I Year B.E. CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+int first_edition=50525,second_edition=40399,sum;
+
+printf("No of books published in first edition \t : %d",first_edition);
+printf("\nNo of books published in second edition  : %d",second_edition);
+
+sum=first_edition + second_edition;
+
+printf("\nTotal number of books published : %d",sum);
+}
+
+Output
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : S.Pooja - I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+No of books published in first edition 	 : 50525
+No of books published in second edition  : 40399
+Total number of books published : 90924
+
+                                ***************************************************
+2.Calculate number of tickets the girl sold in the following scenario. The girls had 3 weeks to sell tickets for 
+their play. In the first week, they sold ‘x’ tickets. In the second week they sold ‘y’ tickets and in the third week they 
+sold ‘z’ tickets. 
+                                ***************************************************
+3.Mr. Leo das spent Rs.X for petrol on Wednesday. He spent Rs.  Y more than that on Thursday. Write a program to calculate 
+how much did he spend on petrol on those two days.
+
+Program
+
+#include <stdio.h>
+
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by : Rithick Krishnaraj - I Year B.E. CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+int x,y, sum;
+printf("Enter Rupees spent on Wednesday : ");
+scanf("%d",&x);
+printf("Enter the extra Rupees spent on Thursday : ");
+scanf("%d",&y);
+
+sum=2*x+y;
+printf("%d is the total amount spent for petrol on these two days:", sum);
+}
+
+Output
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Rithick Krishnaraj - I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter Rupees spent on Wednesday : 30
+Enter the extra Rupees spent on Thursday : 20
+80 is the total amount spent for petrol on these two days:
+
+                                ***************************************************   
 
 4.A bus can hold 108 passengers. If there are ‘x’ rows of seats on the bus, Calculate how many seats are in each row? 
 
-5.Kundavai needs 5 oranges to make a glass of orange juice. If Kundavai has ‘X’ oranges, Calculate how many glasses of orange juice can she make?
+Program 
 
-// High
+#include <stdio.h>
+void main() 
+{
+    int x;
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("\nProgram by : V. Swetha : I Year B.E. CSBS");
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("\nEnter the number of rows : ");
+    scanf("%d",&x);
+    
+    printf("Number of seats = %d",108/x);
+}
+
+Output
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : V. Swetha : I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter the number of rows : 9
+Number of seats = 12
+
+                                ***************************************************
+
+5.Kundavai needs 5 oranges to make a glass of orange juice. If Kundavai has ‘X’ oranges, Calculate how many glasses 
+of orange juice can she make?
+
+Program
+
+#include <stdio.h>
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by : Shreenidhi Gopal - I Year B.E. CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+int x,glasses;
+
+printf("Enter the number of oranges : ");
+scanf("%d",&x);
+
+glasses=x/5;
+
+if (glasses<0)
+{
+printf("\nAdd some more oranges to get a perfect drink!");
+}
+else
+{
+printf("\nKundavai can make %d glasses of orange juice", glasses);
+}
+
+}
+
+Output
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Shreenidhi Gopal - I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter the number of oranges : 30
+
+Kundavai can make 6 glasses of orange juice
+
+---------------------------------------------------------------------------------------------------
+High
+---------------------------------------------------------------------------------------------------
 1.Area and Circumference of a Circle
-2.Perimeter and Area of a Rectangle
-3.Temperature Converter (Celsius to Fahrenheit)
-4.Fahrenheit to Kelvin Conversion
-5.Surface Area and Volume of a Sphere
 
+Program
+
+#include <stdio.h>
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by : Sudiksha R : I Year B.E. CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+float radius, area, circumference;
+
+printf("Enter radius of the Circle : ");
+scanf("%f", &radius);
+
+area=3.14*(radius*radius);
+circumference=2*3.14*radius;
+
+printf("Area of Circle: %.2f \n", area);
+printf("Circumference of Circle: %.2f", circumference);
+}
+
+Output
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Sudiksha R : I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter radius of the Circle : 26
+Area of Circle: 2122.64 
+Circumference of Circle: 163.28
+
+                                ***************************************************
+2.Perimeter and Area of a Rectangle
+                                ***************************************************
+3.Temperature Converter (Celsius to Fahrenheit)
+                                ***************************************************
+4.Fahrenheit to Kelvin Conversion
+                                ***************************************************
+5.Surface Area and Volume of a Sphere
+                                ***************************************************
 
 
