@@ -4,17 +4,122 @@
 Easy
 ---------------------------------------------------------------------------------------------------
 1.Compound Interest Calculator
-                                ***************************************************
+
+Program
+
+#include<stdio.h>
+#include<math.h>
+
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by : Jeevanantham.A - I Year B.E. CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+int Principal,n;
+float interest_rate,no_of_year,compound_interest,amount;
+  
+printf("Enter Principal amount :\n");
+scanf("%d",&Principal);
+printf("Enter Annual Rate :\n");
+scanf("%f",&interest_rate);
+printf("Enter Compound per year :\n");
+scanf("%d",&n);
+printf("Enter  invested Time (t in years) :\n");
+scanf("%f",&no_of_year);
+    
+amount=Principal*pow(1+(interest_rate/100)/n,no_of_year);
+compound_interest = amount - Principal;
+    
+printf("\nPrincipal is \t\t : \u20B9 %d",Principal);
+printf("\nCompound Interest is : \u20B9 %.2f",compound_interest);
+}
+
+Note:
+Unicode for the Indian Rupee symbol (₹) is \u20B9
+
+Output
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Jeevanantham.A - I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter Principal amount :
+10000
+Enter Annual Rate :
+10
+Enter Compound per year :
+1
+Enter  invested Time (t in years) :
+2
+
+Principal is 		 : ₹ 10000
+Compound Interest is : ₹ 2100.00
+
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
 2.BMI (Body Mass Index) Calculator
 
 Program
 
+#include<stdio.h>
+#include<math.h>
+
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by : Kanishk.J.M - I Year B.E. CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+float weight, height,BMI;
+
+printf("Enter your weight in kg : ");
+scanf("%f",&weight);
+printf("\nEnter your height in cm : ");
+scanf("%f",&height);
+
+BMI=weight/(height*height);
+
+printf("\nYour BMI is  : %.2f",BMI);
+if(BMI<18.5)
+{
+    printf("\nCategory\t : Under weight");
+}
+else if(BMI>18.5 && BMI<24.9)
+{
+    printf("\nCategory\t : Normal weight");
+}
+else if(BMI>25 && BMI<29.9)
+{
+    printf("\nCategory\t : Over weight ");
+}
+else if(BMI>=30)
+{
+    printf("\nCategory\t : Obesity");
+}
+
+}
+
+
 Output
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Kanishk.J.M - I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter your weight in kg : 67
 
-                                ***************************************************
+Enter your height in cm : 1.70
+
+Your BMI is  : 23.18
+Category	 : Normal weight
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
 3.Simple Interest Calculator
-                                ***************************************************
+
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
 4.Ohm's Law Calculator
 
 Program
@@ -52,8 +157,60 @@ Enter the Resistance : 50
 Voltage is : 160 V
 
 
-                                ***************************************************
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
 5.Harmonic Mean Calculation
+
+Program
+
+#include<stdio.h>
+
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by : Balasankaran - I Year B.E. CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+int N;
+float num,c=0;
+
+printf("Enter number of values : ");
+scanf("%d",&N);
+
+for(int i=1;i<=N;i++)
+{
+   printf("\nEnter the data value %d : ",i);
+   scanf("%f",&num);
+
+   num =1/num;
+   c = c + num;
+}
+
+float mean = N/c;
+printf("\nHarmonic Mean of given data values is approximately %.2f", mean);
+
+}
+
+Output
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Balasankaran - I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter number of values : 3
+
+Enter the data value 1 : 4
+
+Enter the data value 2 : 6
+
+Enter the data value 3 : 8
+
+Harmonic Mean of given data values is approximately 5.54
+
+
+
+
+
+
 
 ---------------------------------------------------------------------------------------------------
 Medium
@@ -91,7 +248,11 @@ No of books published in first edition 	 : 50525
 No of books published in second edition  : 40399
 Total number of books published : 90924
 
-                                ***************************************************
+
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
+
 2.Calculate number of tickets the girl sold in the following scenario. The girls had 3 weeks to sell tickets for 
 their play. In the first week, they sold ‘x’ tickets. In the second week they sold ‘y’ tickets and in the third 
 week they sold ‘z’ tickets. 
@@ -132,7 +293,8 @@ Tickets sold in third week - z : 6
 Total number of Tickets sold : 12
 
 
-                                ***************************************************
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
 3.Mr. Leo das spent Rs.X for petrol on Wednesday. He spent Rs.  Y more than that on Thursday. Write a program to calculate 
 how much did he spend on petrol on those two days.
 
@@ -165,8 +327,9 @@ Enter Rupees spent on Wednesday : 30
 Enter the extra Rupees spent on Thursday : 20
 80 is the total amount spent for petrol on these two days:
 
-                                ***************************************************   
 
+```````````````````````````````````````````````````````````````````````````````````````````````````
+                                
 4.A bus can hold 108 passengers. If there are ‘x’ rows of seats on the bus, Calculate how many seats are in each row? 
 
 Program 
@@ -191,7 +354,8 @@ Program by : V. Swetha : I Year B.E. CSBS
 Enter the number of rows : 9
 Number of seats = 12
 
-                                ***************************************************
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
 
 5.Kundavai needs 5 oranges to make a glass of orange juice. If Kundavai has ‘X’ oranges, Calculate how many glasses 
 of orange juice can she make?
@@ -275,8 +439,8 @@ Area of Circle: 2122.64
 Circumference of Circle: 163.28
 
 
-                                ***************************************************
-
+```````````````````````````````````````````````````````````````````````````````````````````````````
+                                
 2.Perimeter and Area of a Rectangle
 
 Program
@@ -317,12 +481,124 @@ Perimeter of the Rectangle : 24
 Area of the Rectangle : 27
 
 
-                                ***************************************************
-3.Temperature Converter (Celsius to Fahrenheit)
-                                ***************************************************
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
+3.Temperature Converter (Fahrenheit to Celsius)
+
+Program
+
+#include<stdio.h>
+
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by : Preethi Ragupathi - I Year B.E. CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+float fahrenheit, celsius;
+
+printf("Enter temperature in Fahrenheit: ");
+scanf("%f", &fahrenheit);
+
+celsius = (fahrenheit - 32) * 5 / 9;
+printf("Temperature in Celsius: %.2f\u00B0C\n", celsius);
+
+}
+
+Note : for degree Symbol
+\u00B0 is the Unicode escape sequence for the degree symbol
+or
+copy and paste the ° symbol
+
+Output
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Preethi Ragupathi - I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter temperature in Fahrenheit: 75
+Temperature in Celsius: 23.89°C
+
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
+                                
 4.Fahrenheit to Kelvin Conversion
-                                ***************************************************
+
+Program
+
+#include<stdio.h>
+
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by : Ritheesh.D - I Year B.E. CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+float fahrenheit, kelvin, A;
+
+printf("Enter Fahrenheit :\n");
+scanf("%f",&fahrenheit);
+
+A=(fahrenheit-32)*5/9;
+kelvin=A+273.15;
+
+printf("%.0f degrees Fahrenheit is equal to about %.0f Kelvin", fahrenheit,kelvin );
+
+}
+
+
+Output
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Ritheesh.D - I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter Fahrenheit :
+82
+82 degrees Fahrenheit is equal to about 301 Kelvin
+
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
+                                
 5.Surface Area and Volume of a Sphere
+
+Program
+
+#include<stdio.h>
+
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by : Shreya P - I Year B.E. CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+int radius;
+float pi=3.14, Surface_Area, Volume;
+
+printf("Enter the Radius : ");
+scanf("%d", &radius);
+
+//To calculate the surface area of the sphere
+
+Surface_Area = 4*pi*radius*radius;
+
+printf("Surface Area of the Sphere is : %.2f cm", Surface_Area);
+
+//To calculate the volume of sphere
+
+Volume = (4.0/3)*pi*radius*radius*radius;
+
+printf("\nVolume of the Sphere is : %.2f cm\u00B3", Volume); 
+}
+
+Note :
+\u00B3 is the Unicode to display cube
+
+Output
+
+Enter the Radius : 9
+Surface Area of the Sphere is : 1017.36 cm
+Volume of the Sphere is : 3052.08 cm³
+
+
                                 ***************************************************
 
 
