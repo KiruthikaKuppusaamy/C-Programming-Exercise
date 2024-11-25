@@ -1,0 +1,404 @@
+/*  Implementation of Problems involving Selection statements */
+
+---------------------------------------------------------------------------------------------------
+Easy
+---------------------------------------------------------------------------------------------------
+Find the Largest of Three Numbers
+•	Problem: Write a C program to find the largest of three numbers using an if-else statement.
+•	Hint: Use nested if-else conditions to compare the numbers.
+
+Program
+~~~~~~~
+
+Output
+~~~~~~
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : Jeevanantham.A - I Year B.E. CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
+Check if a Number is Even or Odd
+•	Problem: Write a C program that checks whether a given number is even or odd using an if-else statement.
+•	Hint: Use the modulus operator % to determine if a number is divisible by 2.
+
+Program
+~~~~~~~
+
+Output
+~~~~~~
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
+Check Triangle Validity
+
+•	Problem: Write a C program to check whether a triangle is valid or not based on the given sides using an if-else statement. A triangle is valid if the sum of any two sides is greater than the third side.
+•	Hint: Use if-else to check the triangle validity condition for the three sides.
+•	Input:  a = 7, b = 10, c = 5 
+       Output: Valid
+•	Input: a = 1 b = 10 c = 12 
+       Output: Invalid
+
+Program
+~~~~~~~
+
+#include <stdio.h>
+void main()
+{
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("\n Program by - Jeevanantham.A I-year B.Tech CSBS");
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    
+    int a,b,c;
+    printf("\nEnter First side  'a': ");
+    scanf("%d",&a);
+    printf("Enter Second side 'b': ");
+    scanf("%d",&b);
+    printf("Enter Third side  'c': ");
+    scanf("%d",&c);
+    
+    if((a+b>c)&&(b+c>a)&&(c+a>b))
+        printf("Given Triangle is VALID");
+    else
+       printf("Given Triangle is INVALID");
+}
+
+
+Output
+~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Program by - Jeevanantham.A I-year B.Tech CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter First side  'a': 7
+Enter Second side 'b': 10
+Enter Third side  'c': 5
+Given Triangle is VALID
+
+Enter First side  'a': 1
+Enter Second side 'b': 10
+Enter Third side  'c': 12
+Given Triangle is INVALID
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
+Traffic Light System
+•	Problem: Input the color of the traffic light (r for red, y for yellow, g for green). 
+•	Hint: Based on the input:
+                        Red (r): Print "Stop."
+                        Yellow (y): Print "Get ready."
+                        Green (g): Print "Go."
+
+Program
+~~~~~~~
+
+Output
+~~~~~~
+```````````````````````````````````````````````````````````````````````````````````````````````````
+Check Temperature Status
+•	Problem:  Input the temperature. If the temperature is above 30°C, print "Hot." 
+            If the temperature is between 20°C and 30°C, print "Warm." 
+            If the temperature is below 20°C, print "Cold."
+
+
+Program
+~~~~~~~
+
+#include<stdio.h>
+void main() 
+{
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("\nProgram by:L.Poovai salate jesintha-B.Tech-CSBS-I");
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    int temp;
+    printf ("Enter the temperature:");
+    scanf ("%d",&temp);
+    if(temp>30)
+    {
+        printf ("Hot");
+    }
+    else if(temp>=20&&temp<=30)
+    {
+        printf("Warm");
+    }
+    else if(temp<20)
+    {
+        printf ("Cold");
+    }
+}
+
+
+Output
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by:L.Poovai salate jesintha-B.Tech-CSBS-I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter the temperature:35
+Hot
+
+
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+---------------------------------------------------------------------------------------------------
+Medium
+---------------------------------------------------------------------------------------------------
+
+Vowel or Consonant Check
+•	Problem: Write a C program to check whether a given character is a vowel or a consonant using a switch statement.
+•	Hint: Use the switch case to match the character with vowels (a, e, i, o, u).
+
+Program
+~~~~~~~
+
+Output
+~~~~~~
+```````````````````````````````````````````````````````````````````````````````````````````````````
+Number Classification (Positive, Negative, or Zero)
+•	Problem: Write a C program to check whether a given number is positive, negative, or zero using if-else conditions.
+•	Hint: Use if-else statements to classify the number based on comparison with 0.
+
+Program
+~~~~~~~
+
+Output
+~~~~~~
+```````````````````````````````````````````````````````````````````````````````````````````````````
+Check Divisibility by 5 and 11
+•	Problem: Write a C program to check if a number is divisible by both 5 and 11 using an if-else statement.
+•	Hint: Use the modulus operator % to check divisibility conditions.
+
+Program
+~~~~~~~
+
+Output
+~~~~~~
+```````````````````````````````````````````````````````````````````````````````````````````````````
+Determine the Type of a Triangle
+•	Problem: Write a C program to determine whether a given triangle is equilateral, isosceles, or scalene based on the sides' lengths using if-else.
+•	Hint: Use conditions to compare the sides of the triangle.
+
+Program
+~~~~~~~
+
+Output
+~~~~~~
+```````````````````````````````````````````````````````````````````````````````````````````````````
+Check Character Type (Alphabet, Digit, or Special Character)
+•	Problem: Write a C program to check whether a given character is an alphabet, a digit, or a special character using an if-else statement.
+•	Hint: Use if-else to check the character using ASCII values
+
+
+Program
+~~~~~~~
+
+Output
+~~~~~~
+```````````````````````````````````````````````````````````````````````````````````````````````````
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+
+
+---------------------------------------------------------------------------------------------------
+High
+---------------------------------------------------------------------------------------------------
+
+
+Grade Assignment Based on Marks
+•	Problem: Write a C program that takes marks as input and assigns a grade based on the following conditions:
+o	90-100: Grade A
+o	80-89: Grade B
+o	70-79: Grade C
+o	60-69: Grade D
+o	Below 60: Grade F
+•	Hint: Use if-else if conditions to handle the grading.
+
+
+Program
+~~~~~~~
+
+Output
+~~~~~~
+```````````````````````````````````````````````````````````````````````````````````````````````````
+Simple Calculator Using Switch Case
+•	Problem: Write a C program to perform basic arithmetic operations (+, -, *, /) based on user input using a switch statement.
+•	Hint: Use switch to check the operator and perform the corresponding operation.
+
+
+Program
+~~~~~~~
+
+Output
+~~~~~~
+```````````````````````````````````````````````````````````````````````````````````````````````````
+Check Leap Year
+•	Problem: Write a C program to check if a given year is a leap year or not using an if-else statement.
+•	Hint: A leap year is divisible by 4, but not by 100 unless it is also divisible by 400.
+
+
+Program
+~~~~~~~
+
+#include<stdio.h>
+void main()
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\n  Program by :Harinisri M - I Year B-TECH CSBS");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+int year;
+printf("\nEnter the year : ");
+scanf("%d",&year);
+
+if ((year%4==0&&year%100!=0)||(year % 400==0))
+{
+     printf("%d is a leap year\n",year);
+}
+else
+{
+    printf("%d is not a leap year\n",year);
+}
+}
+
+
+Output
+~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Program by :Harinisri M - I Year B-TECH CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter the year : 2004
+2004 is a leap year
+
+Enter the year : 2006
+2006 is not a leap year
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
+Electricity Bill Calculation
+•	Problem: Write a C program to calculate the electricity bill based on the following tariff:
+   o	First 100 units: $1 per unit
+   o	Next 100 units: $1.50 per unit
+   o	Above 200 units: $2 per unit
+•	Hint: Use if-else to calculate the total bill based on the number of units consumed.
+
+
+Program
+~~~~~~~
+
+#include<stdio.h>
+void main() 
+{
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+printf("\nProgram by:Rithick Krishnaraj - B.Tech-CSBS-I");
+printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+   
+int units, bill;
+printf("Enter number of units consumed:");
+scanf("%d",&units);
+
+if(units<100)
+{
+bill=units*1;
+}
+else if(units<200)
+{
+bill=100+(units-100)*1.5;
+}
+else
+{
+bill=100+150+(units-200)*2;
+}
+
+printf("Electricity Bill is : %d", bill);
+}
+
+
+Output
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by:Rithick Krishnaraj - B.Tech-CSBS-I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter number of units consumed:250
+Electricity Bill is : 350
+
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
+Days in a Month (Using Switch Case)
+•	Problem: Write a C program to input a month number and print the number of days in that month using a switch statement. Consider leap years for February.
+•	Hint: Handle different month cases with the switch statement, and add logic to check for leap years in February.
+
+
+Program
+~~~~~~~
+
+#include <stdio.h>
+int main()
+{
+printf("--------------------------------------------");
+printf("\n Program by:SUGINDHARA.V-I YEAR B.TECH.CSBS");
+printf("\n--------------------------------------------");
+
+int month;
+printf("\nEnter the month number [1-12]:");
+scanf("%d",&month);
+
+switch(month)
+{
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+         printf("31 days");
+         break;
+    case 2:
+        int year;
+        printf("Enter the year : ");
+        scanf("%d",&year);
+        if ((year%4==0&&year%100!=0)||(year % 400==0))
+        {
+         printf("29 days");
+        }
+        else
+        { 
+         printf("28 days");
+       }
+        break;
+   case 4:
+   case 6:
+   case 9:
+   case 11:
+         printf("30 days");
+         break;
+   default:
+         printf("invalid Enter number between(1-12");
+     }
+     return 0;
+ }
+
+Output
+~~~~~~
+
+--------------------------------------------
+ Program by:SUGINDHARA.V-I YEAR B.TECH.CSBS
+--------------------------------------------
+Enter the month number [1-12]:10
+31 days
+
+Enter the month number [1-12]:2
+Enter the year : 2000
+29 days
+
+Enter the month number [1-12]:2
+Enter the year : 2003
+28 days
