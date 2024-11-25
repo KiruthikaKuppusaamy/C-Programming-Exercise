@@ -187,9 +187,63 @@ Determine the Type of a Triangle
 Program
 ~~~~~~~
 
+#include<stdio.h>
+void main()
+{
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("\n    Program by :Naveenkumar S - I Year B.Tech CSBS");
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    
+    float s1,s2,s3;
+    printf("\nEnter the first side of the Triangle  's1': ");
+    scanf("%f",&s1);
+    printf("Enter the second side of the Triangle 's2': ");
+    scanf("%f",&s2);
+    printf("Enter the third side of the Triangle  's3': ");
+    scanf("%f",&s3);
+    
+    if(s1==s2 && s2==s3)
+    {
+        printf("\nThis is an Equilateral Triangle");
+    }
+    else if(s1==s2 || s2==s3 || s3==s1)
+    {
+        printf("\nThis is an Isosceles Triangle");
+    }
+    else
+    {
+        printf("\nThis is a Scalene Triangle");
+    }
+}
+
+
 Output
 ~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Program by :Naveenkumar S - I Year B.Tech CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter the first side of the Triangle  's1': 21
+Enter the second side of the Triangle 's2': 21
+Enter the third side of the Triangle  's3': 21
+
+This is an Equilateral Triangle
+               *******
+Enter the first side of the Triangle  's1': 23
+Enter the second side of the Triangle 's2': 21
+Enter the third side of the Triangle  's3': 23
+
+This is an Isosceles Triangle
+               *******
+Enter the first side of the Triangle  's1': 23
+Enter the second side of the Triangle 's2': 21
+Enter the third side of the Triangle  's3': 22
+
+This is a Scalene Triangle
+
+
 ```````````````````````````````````````````````````````````````````````````````````````````````````
+
 Check Character Type (Alphabet, Digit, or Special Character)
 •	Problem: Write a C program to check whether a given character is an alphabet, a digit, or a special character using an if-else statement.
 •	Hint: Use if-else to check the character using ASCII values
