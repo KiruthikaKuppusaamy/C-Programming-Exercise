@@ -1,0 +1,247 @@
+1.Write a C program to calculate the sum of the first n natural numbers
+#include<stdio.h>
+void main()
+{
+    int n = 5;
+    int sum = 0;
+    sum = (n*(n+1))/2;
+    printf("Sum is : %d",sum);
+}
+
+
+
+2.Write a C program to calculate the sum of the harmonic series up to n terms.
+
+#include<stdio.h>
+void main()
+{
+    int n = 5;
+    float sum = 0;
+    
+    for(int i = 1;i<=5;i++)
+    {
+        sum = sum + 1.0/i;
+    }
+    printf("Sum is : %f",sum);
+}
+
+
+
+3.Write a C program to generate the Fibonacci series up to n terms
+#include<stdio.h>
+void main()
+{
+    int fno=0,sno=1,sum=0,n=6;
+    printf("%d %d",fno,sno);
+    for(int i=1;i<=n-2;i++)
+    {
+        sum = fno+sno;
+        fno = sno;
+        sno = sum;
+        printf(" %d",sum);
+    }
+}
+
+
+4.Write a C program to calculate the sum of squares of the first n natural numbers
+
+#include<stdio.h>
+void main()
+{
+    int n=4;
+    int sum = 0;
+    for(int i=1;i<=n;i++)
+    {
+        sum = sum + (i*i);
+    }
+    printf(" %d",sum);
+}
+
+
+5.Write a C program to generate a multiplication table for a given number up to a specified 
+   range.
+
+#include<stdio.h>
+void main()
+{
+    int n=4,range=12;
+    
+    for(int i=1;i<=range;i++)
+    {
+        printf("%d x %d = %d\n",i,n,i*n);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.Write a C program to check whether a given number is prime or not using iteration.
+
+#include<stdio.h>
+void main()
+{
+    int n=47,count=0;
+    
+    for(int i=2;i<=n/2;i++)
+    {
+        if(n%i==0)
+        {
+            count++;
+        }
+    }
+    
+    if(count==0)
+    {
+        printf("Prime");
+    }
+    else
+    {
+        printf("Not Prime");
+    }
+    
+}
+
+
+2.Write a C program to calculate the sum of digits of a given number
+
+#include<stdio.h>
+void main()
+{
+    int digit,sum = 0,no = 137;
+    
+    while(no>0)
+    {
+         digit = no%10;
+         sum = sum + digit;
+         no = no/10;
+    }
+    printf("Sum of digits is : %d", sum);
+}
+
+
+
+
+
+3.Write a C program to reverse a given number using a loop.
+
+#include<stdio.h>
+void main()
+{
+    int digit,no = 2374;
+    
+    while(no>0)
+    {
+         digit = no%10;
+         printf("%d", digit);
+         no = no/10;
+    }
+   
+}
+
+
+
+4.Write a C program to compute the sum of even numbers and the sum of odd numbers 
+   separately between 1 and n
+
+#include<stdio.h>
+void main()
+{
+    int i,no=6,odd=0,even=0;
+    
+    for(i=1;i<=no;i++)
+    {
+        if(i%2==0)
+        {
+            even+=i;
+        }
+        else
+        {
+            odd+=i;
+        }
+    }
+    
+    printf("Sum of even number is %d\n",even);
+    printf("Sum of odd number is %d",odd);
+   
+}
+
+
+
+
+
+5.Write a C program to compute the factorial of a number n
+
+#include<stdio.h>
+void main()
+{
+    int i,no=4,fact=no;
+    
+    for(i=no-1;i>0;i--)
+    {
+       fact = fact*i;
+    }
+    printf("Factorial is %d\n",fact);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.Write a C program to check whether a given number is a perfect number or not. A 
+   perfect number is a number that is equal to the sum of its proper divisors (excluding 
+   itself).
+
+2.Write a C program to find the Least Common Multiple (LCM) and Greatest Common 
+   Divisor (GCD) of two numbers using loops
+
+3.Write a C program to Generate Pascal’s Triangle up to a given number of rows.
+
+4.Write a C program to calculate the sum of the digits of a number, each raised to a given 
+   power p
+
+5.Write a C program to calculate the sum of a binomial expansion series upto n terms
+
+
