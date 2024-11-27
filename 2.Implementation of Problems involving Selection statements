@@ -10,16 +10,48 @@ Find the Largest of Three Numbers
 Program
 ~~~~~~~
 
+#include <stdio.h>
+
+void main()
+{
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("\n     Program by - Ritheesh.D I-year B.Tech CSBS");
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    int num1,num2,num3,largest;
+    printf("\nEnter the first number  : ");
+    scanf("%d",&num1);
+    printf("Enter the second number : ");
+    scanf("%d",&num2);
+    printf("Enter the third number  : ");
+    scanf("%d",&num3);
+    
+    if(num1>num2&&num1>num3)
+    {
+        largest = num1;
+    }
+    else if(num2>num1&&num2>num3)
+    {
+        largest = num2;
+    }
+    else
+    {
+        largest = num3;
+    }
+    printf("Largest number is : %d",largest);
+ }
+
+
+
 Output
 ~~~~~~
 
-
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program by : Jeevanantham.A - I Year B.E. CSBS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Program by - Ritheesh.D I-year B.Tech CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter the first number  : 12
+Enter the second number : 16
+Enter the third number  : 10
+Largest number is : 16
 
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````
@@ -31,8 +63,40 @@ Check if a Number is Even or Odd
 Program
 ~~~~~~~
 
+#include <stdio.h>
+void main()
+{
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("\n  Program by - PRAVIN J I-year B.Tech CSBS");
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    
+    int x;
+    printf("\nEnter a number : ");
+    scanf("%d",&x);
+    
+    if(x%2==0)
+    {
+        printf("Given number is Even ");
+    }
+    else
+    {
+        printf("Given number is Odd ");
+    }
+}
+
+
 Output
 ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Program by - PRAVIN J I-year B.Tech CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter a number : 6
+Given number is Even 
+
+Enter a number : 7
+Given number is Odd 
+
+
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 
 Check Triangle Validity
@@ -84,6 +148,8 @@ Enter First side  'a': 1
 Enter Second side 'b': 10
 Enter Third side  'c': 12
 Given Triangle is INVALID
+
+
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 
 Traffic Light System
@@ -96,8 +162,47 @@ Traffic Light System
 Program
 ~~~~~~~
 
+#include <stdio.h>
+
+void main()
+{
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("\n Program by - SEDHU RAM I-year B.Tech CSBS");
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    char color;
+    printf("\nEnter colour of the traffic light \n(r for red, y for yellow, g for green): ");
+    scanf(" %c", &color);
+    switch(color) {
+        case 'r':
+        case 'R':
+            printf("\nStop");
+            break;
+        case 'y':
+        case 'Y': 
+            printf("\nGet ready");
+            break;
+        case 'g':
+        case 'G':
+            printf("\nGo");
+            break;
+        default:
+            printf("Invalid input. Please enter 'r', 'y', or 'g'.\n");
+    }
+}
+
+
 Output
 ~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Program by - SEDHU RAM I-year B.Tech CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter colour of the traffic light 
+(r for red, y for yellow, g for green): g
+
+Go
+
+
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 Check Temperature Status
 •	Problem:  Input the temperature. If the temperature is above 30°C, print "Hot." 
@@ -157,8 +262,58 @@ Vowel or Consonant Check
 Program
 ~~~~~~~
 
+#include <stdio.h>
+
+void main()
+{
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("\nProgram by - PUVITHA I-year B.Tech CSBS");
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    char ch;
+    printf("\nEnter a character: ");
+    scanf("%c",&ch);
+    
+    switch(ch)
+    {
+        case 'a':
+        case 'A':
+           printf("%c is a vowel\n",ch); 
+           break;
+        case 'e':
+        case 'E':
+           printf("%c is a vowel\n",ch); 
+           break;
+        case 'i':
+        case 'I':
+           printf("%c is a vowel\n",ch); 
+           break;
+        case 'o':
+        case 'O':
+           printf("%c is a vowel\n",ch); 
+           break;
+        case 'u':
+        case 'U':
+           printf("%c is a vowel\n",ch); 
+           break;
+        default:
+           printf("%c is a consonant\n",ch);
+           break;
+    }
+}
+
+
 Output
 ~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by - PUVITHA I-year B.Tech CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter a character: o
+o is a vowel
+
+Enter a character: G
+G is a consonant
+
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 Number Classification (Positive, Negative, or Zero)
 •	Problem: Write a C program to check whether a given number is positive, negative, or zero using if-else conditions.
@@ -167,8 +322,48 @@ Number Classification (Positive, Negative, or Zero)
 Program
 ~~~~~~~
 
+#include <stdio.h>
+
+void main()
+{
+ printf("------------------------------------------------");
+ printf("\n Program by : S.THULASIDEVI -I YEAR B.TECH CSBS");
+ printf("\n------------------------------------------------");
+  
+   int n;
+   printf("\nEnter the number:");
+   scanf("%d",&n);
+   
+   if(n>0)
+   {
+       printf("Given number is Positive");
+   }
+   else if(n<0)
+   {
+       printf ("Given number is Negative");
+   }
+   else 
+   {
+       printf("Given number is zero");
+   } 
+}
+
+
 Output
 ~~~~~~
+
+------------------------------------------------
+ Program by : S.THULASIDEVI -I YEAR B.TECH CSBS
+------------------------------------------------
+Enter the number:24
+Given number is Positive
+
+Enter the number:-12
+Given number is Negative
+
+Enter the number:0
+Given number is zero
+
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 Check Divisibility by 5 and 11
 •	Problem: Write a C program to check if a number is divisible by both 5 and 11 using an if-else statement.
@@ -177,8 +372,43 @@ Check Divisibility by 5 and 11
 Program
 ~~~~~~~
 
+#include<stdio.h>
+void main()
+{
+    printf("----------------------------------------");
+    printf("\n Program by:Deepak.C-I year B.Tech CSBS ");
+    printf("\n----------------------------------------");
+   
+    int num;
+    printf("\nEnter a number:");
+    scanf("%d",&num);
+    
+    if(num%5==0 && num%11==0)
+    {
+        printf("Given number is divisible by both 5 and 11");
+    }
+    else
+    {
+        printf("Given number is not divisible by 5 and 11");
+        
+    }
+}
+
+
+
 Output
 ~~~~~~
+
+----------------------------------------
+ Program by:Deepak.C-I year B.Tech CSBS 
+----------------------------------------
+Enter a number:55
+Given number is divisible by both 5 and 11
+
+
+Enter a number:10
+Given number is not divisible by 5 and 11
+
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 Determine the Type of a Triangle
 •	Problem: Write a C program to determine whether a given triangle is equilateral, isosceles, or scalene based on the sides' lengths using if-else.
@@ -245,15 +475,54 @@ This is a Scalene Triangle
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 
 Check Character Type (Alphabet, Digit, or Special Character)
-•	Problem: Write a C program to check whether a given character is an alphabet, a digit, or a special character using an if-else statement.
+•	Problem: Write a C program to check whether a given character is an alphabet, 
+       a digit, or a special character using an if-else statement.
 •	Hint: Use if-else to check the character using ASCII values
 
 
 Program
 ~~~~~~~
 
+#include<stdio.h>
+void main()
+{
+    char c;
+    int ascii;
+    printf("\nEnter a character: ");
+    scanf("%c",&c);
+    
+    ascii = c;
+    
+    if((ascii>=65 && ascii<=90)||(ascii>=97 && ascii<=122))
+    {
+       printf("Given Input is an Alphabet");
+    }
+    else if(ascii>=48 && ascii<=57)
+    {
+       printf("Given Input is a Digit");
+    }
+    else
+    {
+       printf("Given Input is a Special Character");
+    }
+}
+
+
 Output
 ~~~~~~
+
+Enter a character: k
+Given Input is an Alphabet
+
+Enter a character: G
+Given Input is an Alphabet
+
+Enter a character: 3
+Given Input is a Digit
+
+Enter a character: (
+Given Input is a Special Character
+
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 
@@ -266,7 +535,8 @@ High
 
 
 Grade Assignment Based on Marks
-•	Problem: Write a C program that takes marks as input and assigns a grade based on the following conditions:
+•	Problem: Write a C program that takes marks as input and assigns a grade based on the 
+       following conditions:
 o	90-100: Grade A
 o	80-89: Grade B
 o	70-79: Grade C
