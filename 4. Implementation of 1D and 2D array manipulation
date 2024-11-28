@@ -1,0 +1,684 @@
+4. Implementation of 1D and 2D array manipulation
+
+
+-------------------------------------------------------
+LOW
+-------------------------------------------------------
+
+----------------------------------------------------------
+1.WRITE A C PROGRAM TO FIND THE LARGEST ELEMENT IN ARRAY
+----------------------------------------------------------
+
+#include <stdio.h>
+int main() {
+    int n, i;
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter the elements of the array:\n");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    int max = arr[0];
+    for (i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    printf("The largest number in the array is: %d\n", max);
+    return 0;
+}
+
+-------------------------------------------------------------
+OUTPUT:
+Enter the number of elements in the array: 5
+Enter the elements of the array:
+1 9 3 7 5
+-------------------------------------------------------------
+
+-------------------------------------------------------------
+BY:
+ARSHIYA BEGAM.I
+I-YEAR CSBS
+-------------------------------------------------------------
+
+-------------------------------------------------------------
+LOW
+-------------------------------------------------------------
+
+-----------------------------------------------------------------
+2.WRITE A C PROGRAM TO CALCULATE THA SUM OF ELEMENT IN AN ARRAY
+-----------------------------------------------------------------
+
+#include <stdio.h>
+int main()
+{
+    int n, Sum=0;
+printf ("enter the size of array \n");
+scanf ("%d",&n);
+int a[n];
+for (int i=0; i<n; i++)
+{
+    printf ("a[%d]:", i);
+    scanf("%d",&a[i]);
+    Sum=Sum+a[i];
+}
+printf ("\n sum of the array = %d", Sum);
+return 0;
+
+    
+}
+
+-----------------------------------------------------------
+OUTPUT:
+enter the size of array 
+3
+a[0]:1
+a[1]:4
+a[2]:7
+
+ sum of the array = 12
+------------------------------------------------------------
+
+------------------------------------------------------------
+BY:
+SUDIKSHA . R
+I-YEAR CSBS
+-------------------------------------------------------------
+
+-------------------------------------------------------------
+LOW
+-------------------------------------------------------------
+-------------------------------------------------------------
+3.WRITE A C PROGRAM TO REVERSE AN ARRAY 
+-------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter the size of the array: ");
+    scanf("%d", &n);
+    int arr[n];
+    
+    printf("Enter the elements of the array: ");
+    for (int i=0;i<n;i++) {
+        scanf("%d",&arr[i]);
+    }
+    int start=0,end=n-1;
+    while (start<end) {
+        int temp=arr[start];
+        arr[start]=arr[end];
+        arr[end]=temp;
+        start++;
+        end--;
+    }
+    printf("Reversed array: ");
+    for (int i=0;i<n;i++) {
+        printf("%d ",arr[i]);
+    }
+    printf("\n");
+    
+    return 0;
+}
+
+----------------------------------------------------
+OUTPUT:
+Enter the size of the array: 5
+Enter the elements of the array: 2
+3
+5
+7
+9
+Reversed array: 9 7 5 3 2 
+----------------------------------------------------
+
+----------------------------------------------------
+BY:
+RITHEESH . D
+I-YEAR CSBS
+----------------------------------------------------
+
+---------------------------------------------------
+LOW
+---------------------------------------------------
+
+---------------------------------------------------------------------
+4.WRITE A C PROGRAM TO COUNT OCCURRENCES OF AN ELEMENT IN AN ARRAY .
+---------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    int n, i, search, count = 0;
+
+     printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+
+    printf("Enter the elements of the array:\n");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+
+    printf("Enter the element to count its occurrences: ");
+    scanf("%d", &search);
+
+
+    for (i = 0; i < n; i++) {
+        if (arr[i] == search) {
+            count++;
+        }
+    }
+
+    printf("The element %d occurs %d time(s) in the array.\n", search, count);
+
+    return 0;
+}
+
+-------------------------------------------------------
+OUTPUT:
+Enter the number of elements in the array: 2
+Enter the elements of the array:
+4
+4
+Enter the element to count its occurrences: 4
+The element 4 occurs 2 time(s) in the array.
+-------------------------------------------------------
+BY:
+RITHICK. K
+I-YEAR CSBS
+-------------------------------------------------------
+
+
+------------------------------------------------------------------
+LOW
+------------------------------------------------------------------
+
+------------------------------------------------------------------
+5.WRITE A C PROGRAM TO COPY AN ARRAT TO ANOTHER ARRAY
+------------------------------------------------------------------
+
+#include <stdio.h>
+ int main()
+{
+    int a[5];
+    int b[5];
+    int s;
+    printf ("enter the number of elements:");
+    scanf("%d", &s);
+    for (int i=0; i<s; i++)
+    {
+      printf ("enter the elements:");
+      scanf("%d",&a[i]);  
+    }
+    
+    for (int i=0; i<s; i++)
+    {
+        b[i] = a[i]; 
+    }
+    printf("Array 1: ");
+    for (int i=0; i<s; i++)
+    {
+    printf("%d ", a[i]);
+    }
+    printf("\n");
+    printf("Array 2: ");
+    for (int i=0; i<s; i++)
+    { 
+    printf("%d ", b[i]); 
+    }
+printf("\n");
+return 0;
+}
+
+-------------------------------------------------------
+OUTPUT:
+enter the number of elements:3
+enter the elements:8
+enter the elements:7
+enter the elements:6
+Array 1: 8 7 6 
+Array 2: 8 7 6 
+------------------------------------------------------
+
+------------------------------------------------------
+BY:
+JANASRI . R
+I-YEAR CSBS
+------------------------------------------------------
+
+
+-------------------------------------------------------------
+MEDIUM
+-------------------------------------------------------------
+
+--------------------------------------------------------------------
+1.WRITE A C PROGRAM TO FIND MAXIMUM AND MINIMUM ELEMENT OF A 2D ARRAY
+--------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main() {
+    int n,m;
+    printf("Enter row and column:");
+    scanf("%d %d",&n,&m);
+    int array[n][m];
+    printf("Enter the elements below:\n");
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            scanf("%d",&array[i][j]);
+        }
+    }
+    int max_value = array[0][0];
+    int min_value = array[0][0];
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (array[i][j] > max_value) {
+                max_value = array[i][j];
+            }
+            if (array[i][j] < min_value) {
+                min_value = array[i][j];
+            }
+        }
+    }
+    printf("Maximum value: %d\n", max_value);
+    printf("Minimum value: %d\n", min_value);
+    
+    return 0;
+}
+
+-------------------------------------------------
+OUTPUT:
+Enter row and column:1
+2
+Enter the elements below:
+9
+10
+Maximum value: 10
+Minimum value: 9
+-------------------------------------------------
+
+-------------------------------------------------
+BY:
+THIRU MUGHIL SENTHUR . R
+I-YEAR CSBS
+-------------------------------------------------
+-------------------------------------------------
+MEDIUM
+-------------------------------------------------
+
+-------------------------------------------------
+2.WRITE A C PROGRAM TO DELETE AN ELEMENT AT A 
+  DESIRED POSITION FROM AN ARRAY 
+-------------------------------------------------
+
+#include <stdio.h>
+
+void printArray(int arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
+void deleteElement(int arr[], int* size, int pos) {
+    if (pos < 0 || pos >= *size) {
+        printf("Invalid position\n");
+        return;
+    }
+
+    for (int i = pos; i < *size - 1; i++) {
+        arr[i] = arr[i + 1];
+    }
+
+    (*size)--;
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original array: ");
+    printArray(arr, size);
+
+    int pos;
+    printf("Enter position to delete element (0-%d): ", size - 1);
+    scanf("%d", &pos);
+
+    deleteElement(arr, &size, pos);
+
+    printf("Array after deletion: ");
+    printArray(arr, size);
+
+    return 0;
+}
+
+----------------------------------------------
+OUTPUT:
+Original array: 1 2 3 4 5 
+Enter position to delete element (0-4): 3
+Array after deletion: 1 2 3 5 
+----------------------------------------------
+
+----------------------------------------------
+BY:
+SEDHURAM .S
+I-YEAR CSBS
+----------------------------------------------
+
+----------------------------------------------
+MEDIUM
+----------------------------------------------
+
+----------------------------------------------
+3.WRITE A C PROGRAM TO TRANSPOSE A 2D ARRAY
+----------------------------------------------
+
+#include<stdio.h>
+void main()
+{
+    int rows,coloum;
+    printf("Enter the number of rows and coloum:");
+    scanf("%d%d",&rows,&coloum);
+    int matrix[rows][coloum];
+    int transpose[coloum][rows];
+    printf("Enter the element of matrix:\n");
+    for (int i=0;i<rows;i++)
+    {
+        for(int j=0;j<coloum;j++)
+        {
+            scanf("%d",&matrix[i][j]);
+        }
+    }
+    printf("\nEntered matrix\n");
+     for (int i=0;i<rows;i++)
+    {
+        for(int j=0;j<coloum;j++)
+        {
+            printf("%d ",matrix[i][j]);
+            transpose[i][j]=matrix[i][j];
+        }
+        printf("\n");
+    }
+  printf("\nTransposed matrix\n");
+  for (int i=0;i<coloum;i++)
+    {
+        for(int j=0;j<rows;j++)
+        {
+            printf("%d ",transpose[j][i]);
+        }
+        printf("\n");
+    }
+}
+
+--------------------------------------------------
+OUTPUT:
+Enter the number of rows and coloum:2
+2
+Enter the element of matrix:
+3
+4
+5
+6
+
+Entered matrix
+3 4 
+5 6 
+
+Transposed matrix
+3 5 
+4 6 
+----------------------------------------------------
+
+----------------------------------------------------
+BY:
+SAI DHARSHAN 
+I-YEAR CSBS
+----------------------------------------------------
+
+----------------------------------------------------
+MEDIUM
+----------------------------------------------------
+
+----------------------------------------------------
+4.WRITE A C PROGRAM TO SUM OF EACH ROW IN A 2D ARRAY
+----------------------------------------------------
+
+#include <stdio.h>
+void main() 
+{
+    int row,coloumn,matrix[10][10];
+    printf("Enter the number of Rows ");
+    scanf("%d",&row);
+    printf("Enter the number of Column ");
+    scanf("%d",&coloumn);
+    printf("Enter the values for Row and Column \n");
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<coloumn;j++)
+        {
+            printf("Enter the value for matrix[%d][%d] : ",i,j);
+            scanf("%d",&matrix[i][j]);
+        }
+    }
+    for(int i=0,k=1;i<row,k<=row;i++,k++)
+    {
+        int sum=0;
+        for(int j=0;j<coloumn;j++)
+        {
+            sum=sum+matrix[i][j];
+        }
+        printf("The sum of the rows in the Matix of %dth row is %d\n",k,sum);
+    }
+}
+
+
+--------------------------------------------------------------
+OUTPUT:
+Enter the number of Rows 2
+Enter the number of Column 2
+Enter the values for Row and Column 
+Enter the value for matrix[0][0] : 1
+Enter the value for matrix[0][1] : 2
+Enter the value for matrix[1][0] : 3
+Enter the value for matrix[1][1] : 4
+The sum of the rows in the Matix of 1th row is 3
+The sum of the rows in the Matix of 2th row is 7
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+BY:
+NAVEENKUMAR . S
+I-YEAR CSBS
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+MEDIUM
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+5.WRITE A C PROGRAM FIND THE DETERMINANT OF A 3×3 MATRIX
+---------------------------------------------------------------
+
+#include <stdio.h>
+void main() {
+    int matrix[3][3];
+    int i, j;
+    printf("Enter elements of a 3x3 matrix:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            printf("Enter element [%d][%d]: ", i, j);
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+    printf("\nThe 3x3 matrix is:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            printf("%d", matrix[i][j]);
+            printf("\t");
+        }
+        printf("\n"); 
+    }
+}
+
+----------------------------------------------------------
+OUTPUT:
+Enter elements of a 3x3 matrix:
+Enter element [0][0]: 1
+Enter element [0][1]: 2
+Enter element [0][2]: 3
+Enter element [1][0]: 4
+Enter element [1][1]: 5
+Enter element [1][2]: 6
+Enter element [2][0]: 7
+Enter element [2][1]: 8
+Enter element [2][2]: 9
+
+The 3x3 matrix is:
+1	2	3	
+4	5	6	
+7	8	9	
+------------------------------------------------------------
+
+------------------------------------------------------------
+BY:
+KANISHK
+I-YEAR CSBS
+------------------------------------------------------------
+
+
+------------------------------------------------------------
+HIGH
+------------------------------------------------------------
+
+------------------------------------------------------------
+1.WRITE A C PROGRAM TO SEPERATE ODD AND EVEN INTEGER INTO
+  SEPARATE ARRAYS
+------------------------------------------------------------
+
+#include<stdio.h>
+void main()
+{
+    int n,e=0,o=0;
+    printf("Enter the size of the array:");
+    scanf("%d",&n);
+    int arr[n],even[n],odd[n];
+    int i,evencount=0,oddcount=0;
+    printf("\nEnter the element:");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+        if(arr[i]%2==0)
+        {
+            even[evencount++]=arr[i];
+            e++;
+        }
+        else
+        {
+            odd[oddcount++]=arr[i];
+            o++;
+        }
+    }
+    printf("\nEven number:");
+    for(i=0;i<e;i++)
+    {
+        printf("    %d",even[i]);
+    }
+    printf("\nodd number:");
+    for(i=0;i<o;i++)
+    {
+        printf("    %d",odd[i]);
+    }
+    printf("\n");
+    
+ }   
+    
+---------------------------------------------------------
+OUTPUT:
+Enter the size of the array:4
+
+Enter the element:1
+6
+9
+2
+
+Even number:    6    2
+odd number:    1    9
+----------------------------------------------------------
+
+----------------------------------------------------------
+BY:
+THIRU MUGHIL SENTHUR R
+I-YEAR CSBS
+----------------------------------------------------------
+
+----------------------------------------------------------
+HIGH
+----------------------------------------------------------
+
+---------------------------------------------------------------------
+2.WRITE A C PROGRAM TO SORT ELEMENTS OF AN ARRAY IN ASCENDING ORDER
+---------------------------------------------------------------------
+
+#include <stdio.h>
+
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void bubbleSort(int array[], int n) 
+{
+    for (int i = 0; i < n - 1; i++) 
+    {
+        for (int j = 0; j < n - i - 1; j++) 
+        {
+            if (array[j] > array[j + 1]) 
+            {
+                swap(&array[j], &array[j + 1]);
+            }
+        }
+    }
+}
+
+void printArray(int array[], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+}
+
+int main() {
+    int array[] = {64, 34, 25, 12, 22, 11, 90};
+    int n = sizeof(array) / sizeof(array[0]);
+
+    printf("Original array: \n");
+    printArray(array, n);
+
+    bubbleSort(array, n);
+
+    printf("Sorted array: \n");
+    printArray(array, n);
+
+    return 0;
+} 
+
+-----------------------------------------------------------
+OUTPUT:
+Original array: 
+64 34 25 12 22 11 90 
+Sorted array: 
+11 12 22 25 34 64 90 
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+BY:
+PREM T 
+I-YEAR CSBS
+-----------------------------------------------------------
