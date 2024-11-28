@@ -18,6 +18,7 @@ void main()
 }
 
 
+```````````````````````````````````````````````````````````````````````````````````````````````````
 
 2.Write a C program to calculate the sum of the harmonic series up to n terms.
 
@@ -38,6 +39,7 @@ void main()
 }
 
 
+```````````````````````````````````````````````````````````````````````````````````````````````````
 
 3.Write a C program to generate the Fibonacci series up to n terms
 
@@ -59,6 +61,8 @@ void main()
 }
 
 
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
 4.Write a C program to calculate the sum of squares of the first n natural numbers
 
 Program
@@ -77,6 +81,8 @@ void main()
 }
 
 
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
 5.Write a C program to generate a multiplication table for a given number up to a specified 
    range.
 
@@ -94,8 +100,6 @@ void main()
     }
     
 }
-
-
 
 
 
@@ -134,6 +138,7 @@ void main()
     
 }
 
+```````````````````````````````````````````````````````````````````````````````````````````````````
 
 2.Write a C program to calculate the sum of digits of a given number
 
@@ -155,6 +160,7 @@ void main()
 }
 
 
+```````````````````````````````````````````````````````````````````````````````````````````````````
 
 3.Write a C program to reverse a given number using a loop.
 
@@ -175,7 +181,7 @@ void main()
    
 }
 
-
+```````````````````````````````````````````````````````````````````````````````````````````````````
 
 4.Write a C program to compute the sum of even numbers and the sum of odd numbers 
    separately between 1 and n
@@ -206,7 +212,7 @@ void main()
 }
 
 
-
+```````````````````````````````````````````````````````````````````````````````````````````````````
 
 5.Write a C program to compute the factorial of a number n
 
@@ -238,6 +244,9 @@ High
 Program
 ~~~~~~~
 
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
+
 2.Write a C program to find the Least Common Multiple (LCM) and Greatest Common 
    Divisor (GCD) of two numbers using loops
 
@@ -245,11 +254,15 @@ Program
 Program
 ~~~~~~~
 
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
 3.Write a C program to Generate Pascal’s Triangle up to a given number of rows.
 
 Program
 ~~~~~~~
 
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
 
 4.Write a C program to calculate the sum of the digits of a number, each raised to a given 
    power p
@@ -258,6 +271,8 @@ Program
 
 Program
 ~~~~~~~
+
+```````````````````````````````````````````````````````````````````````````````````````````````````
 
 5.Write a C program to calculate the sum of a binomial expansion series upto n terms
 
