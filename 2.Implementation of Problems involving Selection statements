@@ -3,9 +3,9 @@
 ---------------------------------------------------------------------------------------------------
 Easy
 ---------------------------------------------------------------------------------------------------
-Find the Largest of Three Numbers
-•	Problem: Write a C program to find the largest of three numbers using an if-else statement.
-•	Hint: Use nested if-else conditions to compare the numbers.
+1. Find the Largest of Three Numbers
+   • Problem: Write a C program to find the largest of three numbers using an if-else statement.
+   • Hint: Use nested if-else conditions to compare the numbers.
 
 Program
 ~~~~~~~
@@ -56,9 +56,9 @@ Largest number is : 16
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 
-Check if a Number is Even or Odd
-•	Problem: Write a C program that checks whether a given number is even or odd using an if-else statement.
-•	Hint: Use the modulus operator % to determine if a number is divisible by 2.
+2. Check if a Number is Even or Odd
+   • Problem: Write a C program that checks whether a given number is even or odd using an if-else statement.
+   • Hint: Use the modulus operator % to determine if a number is divisible by 2.
 
 Program
 ~~~~~~~
@@ -99,13 +99,13 @@ Given number is Odd
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 
-Check Triangle Validity
+3. Check Triangle Validity
 
-•	Problem: Write a C program to check whether a triangle is valid or not based on the given sides using an if-else statement. A triangle is valid if the sum of any two sides is greater than the third side.
-•	Hint: Use if-else to check the triangle validity condition for the three sides.
-•	Input:  a = 7, b = 10, c = 5 
+  •	Problem: Write a C program to check whether a triangle is valid or not based on the given sides using an if-else statement. A triangle is valid if the sum of any two sides is greater than the third side.
+  •	Hint: Use if-else to check the triangle validity condition for the three sides.
+  •	Input:  a = 7, b = 10, c = 5 
        Output: Valid
-•	Input: a = 1 b = 10 c = 12 
+  •	Input: a = 1 b = 10 c = 12 
        Output: Invalid
 
 Program
@@ -152,9 +152,9 @@ Given Triangle is INVALID
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 
-Traffic Light System
-•	Problem: Input the color of the traffic light (r for red, y for yellow, g for green). 
-•	Hint: Based on the input:
+4. Traffic Light System
+   •	Problem: Input the color of the traffic light (r for red, y for yellow, g for green). 
+   •	Hint: Based on the input:
                         Red (r): Print "Stop."
                         Yellow (y): Print "Get ready."
                         Green (g): Print "Go."
@@ -204,8 +204,8 @@ Go
 
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````
-Check Temperature Status
-•	Problem:  Input the temperature. If the temperature is above 30°C, print "Hot." 
+5. Check Temperature Status
+   •	Problem:  Input the temperature. If the temperature is above 30°C, print "Hot." 
             If the temperature is between 20°C and 30°C, print "Warm." 
             If the temperature is below 20°C, print "Cold."
 
@@ -255,9 +255,9 @@ Hot
 Medium
 ---------------------------------------------------------------------------------------------------
 
-Vowel or Consonant Check
-•	Problem: Write a C program to check whether a given character is a vowel or a consonant using a switch statement.
-•	Hint: Use the switch case to match the character with vowels (a, e, i, o, u).
+1. Vowel or Consonant Check
+   •	Problem: Write a C program to check whether a given character is a vowel or a consonant using a switch statement.
+   •	Hint: Use the switch case to match the character with vowels (a, e, i, o, u).
 
 Program
 ~~~~~~~
@@ -315,9 +315,9 @@ Enter a character: G
 G is a consonant
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````
-Number Classification (Positive, Negative, or Zero)
-•	Problem: Write a C program to check whether a given number is positive, negative, or zero using if-else conditions.
-•	Hint: Use if-else statements to classify the number based on comparison with 0.
+2. Number Classification (Positive, Negative, or Zero)
+  •	Problem: Write a C program to check whether a given number is positive, negative, or zero using if-else conditions.
+  •	Hint: Use if-else statements to classify the number based on comparison with 0.
 
 Program
 ~~~~~~~
@@ -365,9 +365,9 @@ Enter the number:0
 Given number is zero
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````
-Check Divisibility by 5 and 11
-•	Problem: Write a C program to check if a number is divisible by both 5 and 11 using an if-else statement.
-•	Hint: Use the modulus operator % to check divisibility conditions.
+3. Check Divisibility by 5 and 11
+   •	Problem: Write a C program to check if a number is divisible by both 5 and 11 using an if-else statement.
+   •	Hint: Use the modulus operator % to check divisibility conditions.
 
 Program
 ~~~~~~~
@@ -410,9 +410,9 @@ Enter a number:10
 Given number is not divisible by 5 and 11
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````
-Determine the Type of a Triangle
-•	Problem: Write a C program to determine whether a given triangle is equilateral, isosceles, or scalene based on the sides' lengths using if-else.
-•	Hint: Use conditions to compare the sides of the triangle.
+4. Determine the Type of a Triangle
+   •	Problem: Write a C program to determine whether a given triangle is equilateral, isosceles, or scalene based on the sides' lengths using if-else.
+   •	Hint: Use conditions to compare the sides of the triangle.
 
 Program
 ~~~~~~~
@@ -474,10 +474,10 @@ This is a Scalene Triangle
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 
-Check Character Type (Alphabet, Digit, or Special Character)
-•	Problem: Write a C program to check whether a given character is an alphabet, 
+5. Check Character Type (Alphabet, Digit, or Special Character)
+   •	Problem: Write a C program to check whether a given character is an alphabet, 
        a digit, or a special character using an if-else statement.
-•	Hint: Use if-else to check the character using ASCII values
+   •	Hint: Use if-else to check the character using ASCII values
 
 
 Program
@@ -534,37 +534,128 @@ High
 ---------------------------------------------------------------------------------------------------
 
 
-Grade Assignment Based on Marks
-•	Problem: Write a C program that takes marks as input and assigns a grade based on the 
-       following conditions:
-o	90-100: Grade A
-o	80-89: Grade B
-o	70-79: Grade C
-o	60-69: Grade D
-o	Below 60: Grade F
-•	Hint: Use if-else if conditions to handle the grading.
+1. Grade Assignment Based on Marks
+   •	Problem: Write a C program that takes marks as input and assigns a grade based on the 
+        following conditions:
+       o	90-100: Grade A
+       o	80-89: Grade B
+       o	70-79: Grade C
+       o	60-69: Grade D
+       o	Below 60: Grade F
+   •	Hint: Use if-else if conditions to handle the grading.
 
 
 Program
 ~~~~~~~
 
+#include<stdio.h>
+void main()
+{ 
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("\n    Program by : SAI SUDHARSAN - I Year B.Tech CSBS");
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    int eng, tam, mat, sci, ss,tot, mark; 
+    printf("\nEnter Five Subject Marks : "); 
+    scanf("%d %d %d %d %d",&eng, &tam, &mat, &sci, &ss); 
+    
+    tot = eng+tam+mat+sci+ss;
+    mark = tot/5;
+    
+    if(mark>=90)
+    { 
+        printf("\nSecured Grade A"); 
+        
+    } 
+    else if(mark>=80) 
+    { 
+        printf("\nSecured Grade B");
+    } 
+    else if(mark>=70)
+    { 
+        printf("\nSecured Grade C");
+    } 
+    else if(mark>=60)
+    { 
+        printf("\nSecured Grade D");
+    } 
+    else 
+    { 
+        printf("\nSecured Grade F"); 
+    } 
+}
+
 Output
 ~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Program by : SAI SUDHARSAN - I Year B.Tech CSBS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter Five Subject Marks : 70 70 70 70 70
+
+Secured Grade C
+
+
 ```````````````````````````````````````````````````````````````````````````````````````````````````
-Simple Calculator Using Switch Case
-•	Problem: Write a C program to perform basic arithmetic operations (+, -, *, /) based on user input using a switch statement.
-•	Hint: Use switch to check the operator and perform the corresponding operation.
+
+2. Simple Calculator Using Switch Case
+   •	Problem: Write a C program to perform basic arithmetic operations (+, -, *, /) based on
+        user input using a switch statement.
+   •	Hint: Use switch to check the operator and perform the corresponding operation.
 
 
 Program
 ~~~~~~~
 
+#include<stdio.h>
+void main()
+{ 
+    int val1,val2; 
+    char opr;
+    
+    printf("\nEnter Two values : "); 
+    scanf("%d %d",&val1, &val2); 
+    
+    printf("Enter Operator   : "); 
+    scanf(" %c",&opr); 
+    
+    printf("Result           : "); 
+   
+    switch(opr)
+    {
+        case '+':
+            printf("%d + %d = %d",val1,val2,val1+val2);
+            break;
+         case '-':
+            printf("%d - %d = %d",val1,val2,val1-val2);
+            break;
+         case '*':
+            printf("%d x %d = %d",val1,val2,val1*val2);
+            break;
+         case '/':
+            printf("%d / %d = %d",val1,val2,val1/val2);
+            break;
+         default:
+            printf("values or operator are incorrect");
+            break;
+    }   
+}
+
+
 Output
 ~~~~~~
+
+Enter Two values : 10 20
+Enter Operator   : +
+Result           : 10 + 20 = 30
+
+Enter Two values : 10 20
+Enter Operator   : *
+Result           : 10 x 20 = 200
+
 ```````````````````````````````````````````````````````````````````````````````````````````````````
-Check Leap Year
-•	Problem: Write a C program to check if a given year is a leap year or not using an if-else statement.
-•	Hint: A leap year is divisible by 4, but not by 100 unless it is also divisible by 400.
+3. Check Leap Year
+   •	Problem: Write a C program to check if a given year is a leap year or not using an if-else statement.
+   •	Hint: A leap year is divisible by 4, but not by 100 unless it is also divisible by 400.
 
 
 Program
@@ -605,12 +696,12 @@ Enter the year : 2006
 2006 is not a leap year
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````
-Electricity Bill Calculation
-•	Problem: Write a C program to calculate the electricity bill based on the following tariff:
-   o	First 100 units: $1 per unit
-   o	Next 100 units: $1.50 per unit
-   o	Above 200 units: $2 per unit
-•	Hint: Use if-else to calculate the total bill based on the number of units consumed.
+4. Electricity Bill Calculation
+   •	Problem: Write a C program to calculate the electricity bill based on the following tariff:
+       o	First 100 units: $1 per unit
+       o	Next 100 units: $1.50 per unit
+       o	Above 200 units: $2 per unit
+   •	Hint: Use if-else to calculate the total bill based on the number of units consumed.
 
 
 Program
@@ -655,9 +746,9 @@ Electricity Bill is : 350
 
 ```````````````````````````````````````````````````````````````````````````````````````````````````
 
-Days in a Month (Using Switch Case)
-•	Problem: Write a C program to input a month number and print the number of days in that month using a switch statement. Consider leap years for February.
-•	Hint: Handle different month cases with the switch statement, and add logic to check for leap years in February.
+5. Days in a Month (Using Switch Case)
+   •	Problem: Write a C program to input a month number and print the number of days in that month using a switch statement. Consider leap years for February.
+   •	Hint: Handle different month cases with the switch statement, and add logic to check for leap years in February.
 
 
 Program
