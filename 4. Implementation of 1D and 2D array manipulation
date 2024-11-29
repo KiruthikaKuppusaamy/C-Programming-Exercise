@@ -649,3 +649,61 @@ BY:
 PREM T 
 I-YEAR CSBS
 -----------------------------------------------------------
+
+
+3. Write a C program to move all zeroes to the end of a given array.
+
+
+Program
+~~~~~~~
+
+#include <stdio.h>
+
+void main() 
+{
+    int i,lft,rgt,temp,array[] = {4,7,0,5,0,2};
+    int size = sizeof(array)/sizeof(array[0]);
+    
+    lft = 0, rgt = size-1;
+    
+    printf("\nGiven Array is \t\t:");
+    for(i=0;i<size;i++)
+    {
+        printf("%d ",array[i]);
+    }
+    
+    while(rgt>lft)
+    {
+        while(array[lft]!=0)
+        {
+            lft++;
+        }
+        
+        while(array[rgt]==0)
+        {
+            rgt--;
+        }
+        
+        if(lft<rgt)
+        {
+            temp = array[lft];
+            array[lft] = array[rgt];
+            array[rgt] = temp;
+        }
+    }
+    
+    printf("\nRearranged Array is :");
+    for(i=0;i<size;i++)
+    {
+        printf("%d ",array[i]);
+    }
+} 
+
+
+Output
+~~~~~~
+
+Given Array is 		:4 7 0 5 0 2 
+Rearranged Array is :4 7 2 5 0 0
+
+
