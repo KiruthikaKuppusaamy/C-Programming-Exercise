@@ -7,6 +7,7 @@ Strings in C
 3. Write a program in C to count the total number of words in a string.
    (Bhuwanesh)
 4. Write a program in C to compare two strings without using string library functions.
+   (Bhuwanesh)
 5. Write a program in C to count the total number of alphabets, digits and special characters in a string.
 6. Write a program in C to count the total number of vowels and consonants in a string
 7. Write a program in C to find the maximum number of characters in a string
