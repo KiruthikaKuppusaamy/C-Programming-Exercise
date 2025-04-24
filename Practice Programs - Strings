@@ -1,7 +1,65 @@
 Strings in C
 
 1. Write a program in C to separate individual characters from a string.
-   (Nakulan)
+
+
+#include <stdio.h>
+#include <string.h>
+void main() 
+{
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("\nProgram by : NAKULAN S - III Year B.E. EEE");
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+
+    char m[100];
+    printf("Enter the String \n");
+    scanf("%[^\n]s",m);
+    
+    printf("\nSeparated individual characters from the String are :\n");  ;
+    for(int i=0;m[i]!='\0';i++)
+    {
+        printf("%c\n",m[i]);
+    }
+}
+
+_____________________________________________________________________________________________________
+Output:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : NAKULAN S - III Year B.E. EEE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter the String 
+life is very short Nanba
+
+Separated individual characters from the String are :
+l
+i
+f
+e
+ 
+i
+s
+ 
+v
+e
+r
+y
+ 
+s
+h
+o
+r
+t
+ 
+N
+a
+n
+b
+a
+_____________________________________________________________________________________________________
+
+
 2. Write a program in C to print individual characters of a string in reverse order.
    (Nakul Pradhish)
 3. Write a program in C to count the total number of words in a string.
