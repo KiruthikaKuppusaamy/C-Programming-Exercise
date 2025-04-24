@@ -1,0 +1,17 @@
+Strings in C
+
+1. Write a program in C to separate individual characters from a string.
+2. Write a program in C to print individual characters of a string in reverse order.
+3. Write a program in C to count the total number of words in a string.
+4. Write a program in C to compare two strings without using string library functions.
+5. Write a program in C to count the total number of alphabets, digits and special characters in a string.
+6. Write a program in C to count the total number of vowels and consonants in a string
+7. Write a program in C to find the maximum number of characters in a string
+8. Write a program in C to extract a substring from a given string
+9. Write a program in C to read a sentence and replace lowercase characters with uppercase and vice versa.
+10. Write a program in C to remove characters from a string except alphabets.
+11. Write a C program to count each character in a given string.
+12. Write a program in C to combine two strings manually.
+13. Write a program in C to find the largest and smallest words in a string.
+14. Write a program in C to replace the spaces in a string with a specific character.
+15. Write a program in C to split strings by space into words.
