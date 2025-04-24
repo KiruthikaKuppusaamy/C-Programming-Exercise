@@ -109,6 +109,46 @@ ________________________________________________________________________________
 8. Write a program in C to extract a substring from a given string
 9. Write a program in C to read a sentence and replace lowercase characters with uppercase and vice versa.
 10. Write a program in C to remove characters from a string except alphabets.
+
+
+#include <stdio.h>
+#include <ctype.h>
+void main() 
+{
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("\nProgram by : NAGUL PRATHISH S - III Year B.E. EEE");
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+    char a[50],b[50];
+    int i,c=0;
+    scanf("%[^\n]s",a);
+    for(i=0;a[i]!='\0';i++)
+    {
+        c++;
+    }
+    for(i=0;i<c;i++)
+    {
+        if(isalpha(a[i]))
+        {
+            printf("%c",a[i]);
+        }
+    }
+
+}
+
+
+_____________________________________________________________________________________________________
+Output:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : NAGUL PRATHISH S - III Year B.E. EEE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Welcome2KSRCT
+WelcomeKSRCT
+
+_____________________________________________________________________________________________________
+
+
 11. Write a C program to count each character in a given string.
     (Nakul Pradhish)
 12. Write a program in C to combine two strings manually.
