@@ -61,7 +61,43 @@ ________________________________________________________________________________
 
 
 2. Write a program in C to print individual characters of a string in reverse order.
-   (Nakul Pradhish)
+
+
+#include <stdio.h>
+#include <string.h>
+void main() 
+{
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    printf("\nProgram by : NAKULAN S - III Year B.E. EEE");
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+
+    char m[100];
+    int i=0;
+    printf("Enter the String : ");
+    scanf("%[^\n]s",m);
+     
+    int length=strlen(m);
+     
+    printf("In reverse order : ");
+    for(i=length-1;m[i]!='\0';i--)
+    {
+         printf("%c",m[i]);
+    }
+}
+
+_____________________________________________________________________________________________________
+Output:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program by : NAKULAN S - III Year B.E. EEE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter the String : Hakuna Matata
+In reverse order : atataM anukaH
+
+_____________________________________________________________________________________________________
+
+
 3. Write a program in C to count the total number of words in a string.
    (Bhuwanesh)
 4. Write a program in C to compare two strings without using string library functions.
@@ -74,7 +110,10 @@ ________________________________________________________________________________
 9. Write a program in C to read a sentence and replace lowercase characters with uppercase and vice versa.
 10. Write a program in C to remove characters from a string except alphabets.
 11. Write a C program to count each character in a given string.
+    (Nakul Pradhish)
 12. Write a program in C to combine two strings manually.
+    (Nakul Pradhish)
 13. Write a program in C to find the largest and smallest words in a string.
+    (Nakul Pradhish)
 14. Write a program in C to replace the spaces in a string with a specific character.
 15. Write a program in C to split strings by space into words.
